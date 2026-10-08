@@ -1,0 +1,39 @@
+name: Sync publications from Zotero
+
+on:
+  schedule:
+    - cron: "17 11 * * 1"   # every Monday, 06:17 in Colombia (UTC-5)
+  workflow_dispatch:         # "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull items from Zotero
+        run: python3 scripts/zotero_sync.py
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+          ZOTERO_LIBRARY_TYPE: ${{ vars.ZOTERO_LIBRARY_TYPE }}
+          ZOTERO_LIBRARY_ID: ${{ vars.ZOTERO_LIBRARY_ID }}
+          ZOTERO_COLLECTION_KEY: ${{ vars.ZOTERO_COLLECTION_KEY }}
+
+      - name: Commit if the list changed
+        run: |
+          if git diff --quiet -- data/publications.zotero.json; then
+            echo "Publications unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/publications.zotero.json
+          git commit -m "Sync publications from Zotero"
+          git push

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Thomas Martinod</title>
+<meta name="description" content="Research projects of Thomas Martinod: blood rheology, elastic waves in couple-stress media, weak KAM theory, hyperbolic surfaces.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{if(localStorage.getItem("lang")==="es")document.documentElement.classList.add("lang-es")}catch(e){}</script>
+</head>
+<body data-root="" data-page="research" data-title-en="Research · Thomas Martinod" data-title-es="Investigación · Thomas Martinod">
+<header id="site-header"></header>
+
+<main class="page">
+  <h1 class="page-title"><span class="en">Research</span><span class="es">Investigación</span></h1>
+
+  <section class="topic" id="blood">
+    <h2><span class="en">Thermodynamically consistent models of blood</span><span class="es">Modelos termodinámicamente consistentes de la sangre</span></h2>
+    <p class="with"><span class="en">With</span><span class="es">Con</span> Prof. Andrés Córdoba · Universidad EAFIT · 2025–</p>
+    <p class="en">Blood is thixotropic and viscoelastic: at rest, red cells stack into aggregates called rouleaux, and under shear these break apart, so the stress depends on the history of the flow. Many models of this behavior postulate their evolution equations empirically. I am deriving a fully tensorial model from non-equilibrium thermodynamics, with one conformation tensor for individual cells, one for rouleaux, and a scalar <span class="tex">\lambda \in [0,1]</span> that measures the degree of aggregation. Because every relaxation term comes from a free energy, the Second Law holds by construction:</p>
+    <p class="es">La sangre es tixotrópica y viscoelástica: en reposo, los glóbulos rojos se apilan en agregados llamados rouleaux, y bajo cizalla estos se rompen, de modo que el esfuerzo depende de la historia del flujo. Muchos modelos de este comportamiento postulan sus ecuaciones de evolución de forma empírica. Estoy derivando un modelo completamente tensorial desde la termodinámica fuera del equilibrio, con un tensor de conformación para las células individuales, otro para los rouleaux y un escalar <span class="tex">\lambda \in [0,1]</span> que mide el grado de agregación. Como cada término de relajación proviene de una energía libre, la segunda ley se cumple por construcción:</p>
+    <div class="eq">\dot S_{\mathrm{gen}} = \dot S_{\mathrm{cells}} + \dot S_{\mathrm{rouleaux}} + \dot S_{\lambda} \;\ge\; 0 .</div>
+    <p class="en">The model is fitted to startup, relaxation and flow-reversal experiments on human blood, and is meant to extend to clinical flow simulations and to diseases in which blood rheology changes.</p>
+    <p class="es">El modelo se ajusta a experimentos de arranque, relajación e inversión de flujo en sangre humana, y está pensado para extenderse a simulaciones de flujo clínico y a enfermedades en las que cambia la reología de la sangre.</p>
+  </section>
+
+  <section class="topic" id="waves">
+    <h2><span class="en">Elastic waves in couple-stress media</span><span class="es">Ondas elásticas en medios con esfuerzos de par</span></h2>
+    <p class="with"><span class="en">With</span><span class="es">Con</span> Prof. Nicolás Guarín-Zapata · Universidad EAFIT · 2025–2026</p>
+    <p class="en">Classical elasticity has no internal length scale, so it cannot describe size effects in materials with microstructure. The consistent couple-stress theory (C-CST) adds a material length <span class="tex">\ell</span> through the skew-symmetric part of the stress. In my undergraduate thesis I studied the diffraction of elastic waves by a cylindrical obstacle within C-CST, and how the scattered field departs from the classical prediction as the obstacle radius <span class="tex">a</span> approaches <span class="tex">\ell</span>. The thesis received an honorable mention at Universidad EAFIT.</p>
+    <p class="es">La elasticidad clásica no tiene una escala de longitud interna, por lo que no puede describir efectos de tamaño en materiales con microestructura. La teoría consistente de esfuerzos de par (C-CST) añade una longitud material <span class="tex">\ell</span> a través de la parte antisimétrica del esfuerzo. En mi tesis de pregrado estudié la difracción de ondas elásticas por un obstáculo cilíndrico dentro de la C-CST, y cómo el campo dispersado se aparta de la predicción clásica cuando el radio del obstáculo <span class="tex">a</span> se acerca a <span class="tex">\ell</span>. La tesis recibió mención de honor en la Universidad EAFIT.</p>
+  </section>
+
+  <section class="topic" id="weak-kam">
+    <h2><span class="en">Weak KAM solutions for Langevin dynamics</span><span class="es">Soluciones weak KAM para la dinámica de Langevin</span></h2>
+    <p class="with"><span class="en">With</span><span class="es">Con</span> Prof. <a href="https://yuangaogao.github.io/">Yuan Gao</a> · Purdue University · 2024–2025</p>
+    <p class="en">Rare transitions between metastable states of a noisy system are governed, in the small-noise limit, by a Hamilton–Jacobi equation. For overdamped Langevin dynamics with drift <span class="tex">b(x)</span> it reads</p>
+    <p class="es">Las transiciones raras entre estados metaestables de un sistema con ruido se rigen, en el límite de ruido pequeño, por una ecuación de Hamilton–Jacobi. Para la dinámica de Langevin sobreamortiguada con deriva <span class="tex">b(x)</span> esta es</p>
+    <div class="eq">H(x, \nabla u) = |\nabla u|^2 + b(x)\cdot \nabla u = 0 .</div>
+    <p class="en">At Purdue I worked on the construction of a weak KAM solution of this equation. Such solutions encode the quasi-potential, which gives the exponential cost of a transition and the most likely path it follows. I presented this work at the Purdue Summer 2025 Undergraduate Research Symposium and at the UREP-C &amp; 100K Finals Symposium.</p>
+    <p class="es">En Purdue trabajé en la construcción de una solución weak KAM de esta ecuación. Estas soluciones codifican el cuasipotencial, que da el costo exponencial de una transición y el camino más probable que sigue. Presenté este trabajo en el Summer 2025 Undergraduate Research Symposium de Purdue y en el UREP-C &amp; 100K Finals Symposium.</p>
+  </section>
+
+  <section class="topic" id="hyperbolic">
+    <h2><span class="en">Spectra of hyperbolic surfaces</span><span class="es">Espectros de superficies hiperbólicas</span></h2>
+    <p class="with"><span class="en">With</span><span class="es">Con</span> Prof. Carlos Cadavid · Universidad EAFIT</p>
+    <p class="en">A hyperbolic surface is a surface of constant curvature <span class="tex">-1</span>. The eigenvalues of its Laplace–Beltrami operator, <span class="tex">\Delta_g u + \lambda u = 0</span>, carry a great deal of its geometry, from the lengths of closed geodesics to how well the surface mixes. I study how these eigenvalues depend on the shape of the surface.</p>
+    <p class="es">Una superficie hiperbólica es una superficie de curvatura constante <span class="tex">-1</span>. Los valores propios de su operador de Laplace–Beltrami, <span class="tex">\Delta_g u + \lambda u = 0</span>, contienen buena parte de su geometría, desde las longitudes de las geodésicas cerradas hasta qué tan bien se mezcla la superficie. Estudio cómo dependen estos valores propios de la forma de la superficie.</p>
+  </section>
+
+  <hr>
+
+  <section class="topic" id="broader">
+    <h2><span class="en">Broader interests</span><span class="es">Otros intereses</span></h2>
+    <p class="en"><strong>Physics:</strong> non-equilibrium thermodynamics, fluids with microstructure, physical oceanography, couple-stress theories, elastic wave dynamics, molecular physics, classical and quantum field theory. <strong>Mathematics:</strong> hyperbolic geometry, category theory and its applications to quantum computing. <strong>Applied mathematics:</strong> topological data analysis, stochastic dynamics, large deviation theory, weak KAM theory, irreversible chemical reactions, and crochet modelling.</p>
+    <p class="es"><strong>Física:</strong> termodinámica fuera del equilibrio, fluidos con microestructura, oceanografía física, teorías de esfuerzos de par, dinámica de ondas elásticas, física molecular, teoría clásica y cuántica de campos. <strong>Matemáticas:</strong> geometría hiperbólica, teoría de categorías y sus aplicaciones a la computación cuántica. <strong>Matemáticas aplicadas:</strong> análisis topológico de datos, dinámica estocástica, teoría de grandes desviaciones, teoría weak KAM, reacciones químicas irreversibles y modelado de crochet.</p>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="assets/js/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="assets/js/math.js"></script>
+</body>
+</html>

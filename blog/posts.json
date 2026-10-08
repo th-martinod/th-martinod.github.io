@@ -1,0 +1,22 @@
+{
+  "_comment": "One entry per post, newest anywhere (the page sorts by date). Write the post in posts/<slug>.en.md and/or posts/<slug>.es.md and list the languages you wrote. Set \"draft\": true to hide a post.",
+  "posts": [
+    {
+      "slug": "hello-world",
+      "date": "2026-10-08",
+      "tags": ["personal"],
+      "languages": ["en", "es"],
+      "title": { "en": "Hello, world", "es": "Hola, mundo" },
+      "summary": { "en": "Why this site exists and what I plan to write here.", "es": "Por qué existe este sitio y qué pienso escribir aquí." }
+    },
+    {
+      "slug": "writing-math-here",
+      "date": "2026-10-07",
+      "tags": ["academia", "math", "meta"],
+      "languages": ["en"],
+      "title": { "en": "Template: writing math in a post", "es": "Plantilla: escribir matemáticas en una entrada" },
+      "summary": { "en": "A sample post showing headings, equations and code. Delete it when you publish your own.", "es": "Una entrada de ejemplo con títulos, ecuaciones y código. Bórrala cuando publiques las tuyas." },
+      "draft": false
+    }
+  ]
+}

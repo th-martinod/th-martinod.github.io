@@ -1,0 +1,29 @@
+{
+  "_comment": "Hand-edited entries. Use this for preprints before they are on arXiv, or to override a Zotero entry (same DOI or same title wins here). Fields: category (preprint | published | conference | undergraduate | other), title (text, or {\"en\": ..., \"es\": ...}), authors [{given, family}], year, venue, status (in-preparation | submitted | under-review | accepted), working_title, doi, arxiv, pdf, url, code, note.",
+  "items": [
+    {
+      "category": "preprint",
+      "title": "A thermodynamically consistent tensorial model for thixotropic viscoelastic blood",
+      "working_title": true,
+      "authors": [{ "given": "Thomas", "family": "Martinod" }, { "given": "Andrés", "family": "Córdoba" }],
+      "year": 2026,
+      "status": "in-preparation"
+    },
+    {
+      "category": "preprint",
+      "title": "Diffraction of elastic waves by a cylindrical obstacle in consistent couple-stress theory",
+      "working_title": true,
+      "authors": [{ "given": "Thomas", "family": "Martinod" }, { "given": "Nicolás", "family": "Guarín-Zapata" }],
+      "year": 2026,
+      "status": "in-preparation"
+    },
+    {
+      "category": "preprint",
+      "title": "Eigenvalues of the Laplacian on hyperbolic surfaces",
+      "working_title": true,
+      "authors": [{ "given": "Thomas", "family": "Martinod" }, { "given": "Carlos", "family": "Cadavid" }],
+      "year": 2026,
+      "status": "in-preparation"
+    }
+  ]
+}
