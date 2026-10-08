@@ -46,7 +46,7 @@
     // Logo pinned to the top-right corner, with the language switch under it.
     var logo = el(
       '<div class="corner"><a class="site-logo" href="' + root + 'index.html" aria-label="Home">' +
-      '<img src="' + root + 'assets/img/logo.png" data-fallback="' + root + 'assets/img/logo-placeholder.svg" alt="Thomas Martinod logo"></a>' +
+      '<img src="' + root + 'assets/img/logo.png" data-fallback="' + root + 'assets/img/th-logo.svg" alt="Thomas Martinod logo"></a>' +
       '<div class="lang-toggle" role="group" aria-label="Language">' +
       '<button type="button" data-set-lang="en" lang="en">EN</button><span aria-hidden="true">|</span>' +
       '<button type="button" data-set-lang="es" lang="es">ES</button></div></div>'
@@ -68,7 +68,7 @@
   if (!document.querySelector('link[rel="icon"]')) {
     var fav = document.createElement("link");
     fav.rel = "icon";
-    fav.href = root + "assets/img/logo-placeholder.svg";
+    fav.href = root + "assets/img/th-logo.svg";
     var probe = new Image();
     probe.onload = function () { fav.href = root + "assets/img/logo.png"; };
     probe.src = root + "assets/img/logo.png";
